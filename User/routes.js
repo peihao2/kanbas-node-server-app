@@ -1,4 +1,5 @@
 import * as dao from "./dao.js";
+let currentUser = null;
 
 export default function UserRoutes(app) {
   const findAllUsers = async (req, res) => {

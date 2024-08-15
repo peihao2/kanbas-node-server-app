@@ -10,7 +10,8 @@ import mongoose from "mongoose";
 import UserRoutes from "./User/routes.js";
 
 const CONNECTION_STRING =
-  process.env.MONGO_CONNECTION_STRING || "mongodb://127.0.0.1:27017/kanbas";
+  process.env.MONGO_CONNECTION_STRING ||
+  "mongodb+srv://peihao:lph199588@kanbas.kk75t.mongodb.net/?retryWrites=true&w=majority&appName=Kanbas";
 mongoose.connect(CONNECTION_STRING);
 
 const app = express();
